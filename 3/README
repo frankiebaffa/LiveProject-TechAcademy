@@ -1,0 +1,4 @@
+Altered a model for the reviews to include the ID of the product it was written for and created a database migration for this change.
+Add a dropdown on the page used for creating reviews to allow the user to pick the product
+the review was written for by both the picture of the product and the name.
+Modify said dropdown to store the ID of the product selected in the dropdown to the previously created ID section of the database housing the reviews.
