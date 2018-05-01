@@ -1,0 +1,13 @@
+<div class="dropdown filterArea">
+    <input class="dropdown-toggle" id="campaignReview" type="text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" placeholder="Select A Campaign" name="CampaignId">
+    <ul class="dropdown-menu">
+        @Html.Raw(ViewBag.Campaign)
+    </ul>
+</div>
+
+<script>
+    $("li").click(function () {
+        var listElementCampaignId = ($(this).attr("id"));
+        $("#campaignReview").val(listElementCampaignId)
+    });
+</script>
